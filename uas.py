@@ -165,15 +165,16 @@ import Meet7
 import Meet8
 import Meet9
 
-print("=== Daftar Program ===")
-print("1. Meet1 (perbandingan kemungkinan nilai)")
-print("2. Meet2 (operasi logika)")
-print("3. Meet3_4 (perhitungan luas)")
-print("4. Meet5 (kalkulator sederhana)")
-print("5. Meet6 (konditional statement)")
-print("6. Meet7 (password)")
-print("7. Meet8 (menampilkan data)")
-print("8. Meet9 (domain)")
+def run():
+    print("=== Daftar Program ===")
+    print("1. Meet1 (perbandingan kemungkinan nilai)")
+    print("2. Meet2 (operasi logika)")
+    print("3. Meet3_4 (perhitungan luas)")
+    print("4. Meet5 (kalkulator sederhana)")
+    print("5. Meet6 (konditional statement)")
+    print("6. Meet7 (password)")
+    print("7. Meet8 (menampilkan data)")
+    print("8. Meet9 (domain)")
 
 pilihan = input("masukan pilihan (1-8): ")
 
@@ -181,17 +182,20 @@ if pilihan == "1":
    Meet1.run()
 elif pilihan == "2":
     Meet2.run()
-elif pilihan == "3_4":
+elif pilihan == "3":
     Meet3_4.run()
-elif pilihan == "5":
+elif pilihan == "4":
     Meet5.run()
-elif pilihan == "6":
+elif pilihan == "5":
     Meet6.run()
-elif pilihan == "7":
+elif pilihan == "6":
     Meet7.run()
-elif pilihan == "8":
+elif pilihan == "7":
     Meet8.run()
-elif pilihan == "9":
+elif pilihan == "8":
     Meet9.run()
 else:
     print("pilihan tidak valid")
+
+if __name__ == "__main__":
+    run()
